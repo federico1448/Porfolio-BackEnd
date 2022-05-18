@@ -1,4 +1,4 @@
-package com.miaplicacion.primerproyecto.jpa;
+package com.miaplicacion.primerproyecto.jpa.extension;
 
 import com.miaplicacion.primerproyecto.model.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;

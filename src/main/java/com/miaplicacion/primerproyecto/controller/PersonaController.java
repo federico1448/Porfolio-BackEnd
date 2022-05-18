@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.miaplicacion.primerproyecto.jpa.IPersonaService;
+import com.miaplicacion.primerproyecto.jpa.interfaces.IPersonaService;
 import com.miaplicacion.primerproyecto.model.Persona;
 
 @RestController
@@ -28,6 +28,7 @@ public class PersonaController {
 	
 	@PostMapping("/personas/crear")
 	public String createPersona(@RequestBody Persona perso) {
+		System.out.println("llego");
 		interpersona.savePersona(perso);
 		return "La persona fue creada exitosamente";
 	}

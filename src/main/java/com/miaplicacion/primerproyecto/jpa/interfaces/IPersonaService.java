@@ -1,4 +1,4 @@
-package com.miaplicacion.primerproyecto.jpa;
+package com.miaplicacion.primerproyecto.jpa.interfaces;
 
 import java.util.List;
 
