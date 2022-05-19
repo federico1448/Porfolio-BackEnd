@@ -3,10 +3,13 @@ package com.miaplicacion.primerproyecto.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import com.miaplicacion.primerproyecto.jpa.extension.EducationRepository;
-import com.miaplicacion.primerproyecto.jpa.interfaces.IEducationService;
+import org.springframework.stereotype.Service;
+
+import com.miaplicacion.primerproyecto.jpa.EducationRepository;
+import com.miaplicacion.primerproyecto.jpa.IEducationService;
 import com.miaplicacion.primerproyecto.model.Education;
 
+@Service
 public class EducationService  implements IEducationService{
 	@Autowired
 	private EducationRepository educationRepository;

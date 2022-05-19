@@ -1,9 +1,12 @@
-package com.miaplicacion.primerproyecto.jpa.interfaces;
+package com.miaplicacion.primerproyecto.jpa;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.miaplicacion.primerproyecto.model.Education;
 
+@Service
 public interface IEducationService {
 	
 	public List<Education> getEducation();

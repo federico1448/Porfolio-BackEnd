@@ -1,4 +1,4 @@
-package com.miaplicacion.primerproyecto.jpa.extension;
+package com.miaplicacion.primerproyecto.jpa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
