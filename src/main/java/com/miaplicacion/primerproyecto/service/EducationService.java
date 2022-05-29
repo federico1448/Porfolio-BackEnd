@@ -38,4 +38,10 @@ public class EducationService  implements IEducationService{
 		return education;
 	}
 
+	@Override
+	public Education findEducationByName(String name) {
+		Education  edu=educationRepository.findByName(name);
+		return edu;
+	}
+
 }

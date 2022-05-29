@@ -10,13 +10,12 @@ import lombok.Setter;
 
 @Getter @Setter
 @Entity
-public class Experience {
+public class Imagen {
 	@Id
 	@GeneratedValue(strategy=GenerationType.SEQUENCE)
 	private long id;
 	private String name;
-	private String period;
-	private String puesto;
-	private String desciption;
-	private byte[] logo;
+	private byte[] image;
+	private String imagetype;
+
 }

@@ -14,5 +14,7 @@ public interface IProyectService {
 	public void deleteProyect(Long id);
 	
 	public Proyect findProyect(Long id);
+	
+	public Proyect findProyectByName(String name);
 
 }

@@ -7,5 +7,5 @@ import com.miaplicacion.primerproyecto.model.Skill;
 
 @Repository
 public interface SkillRepository extends JpaRepository<Skill,Long>{
-
+	Skill findByName(String name);
 }

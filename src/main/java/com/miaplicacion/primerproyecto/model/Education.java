@@ -17,6 +17,6 @@ public class Education {
 	private String name;
 	private String site;
 	private String year;
-	private String logo;
+	private byte[] logo;
 
 }

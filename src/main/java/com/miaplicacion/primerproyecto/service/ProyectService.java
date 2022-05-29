@@ -3,11 +3,13 @@ package com.miaplicacion.primerproyecto.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.miaplicacion.primerproyecto.jpa.extension.ProyectRepository;
 import com.miaplicacion.primerproyecto.jpa.interfaces.IProyectService;
 import com.miaplicacion.primerproyecto.model.Proyect;
 
+@Service
 public class ProyectService implements IProyectService{
 	@Autowired
 	private ProyectRepository proyectRepository;
@@ -31,6 +33,12 @@ public class ProyectService implements IProyectService{
 	@Override
 	public Proyect findProyect(Long id) {
 		Proyect proyect= proyectRepository.findById(id).orElse(null);
+		return proyect;
+	}
+
+	@Override
+	public Proyect findProyectByName(String name) {
+		Proyect proyect= proyectRepository.findByName(name);
 		return proyect;
 	}
 

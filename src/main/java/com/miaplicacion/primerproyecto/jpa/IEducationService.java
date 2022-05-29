@@ -17,5 +17,6 @@ public interface IEducationService {
 	
 	public Education findEducacion(Long id);
 	
+	public Education findEducationByName(String name);
 
 }

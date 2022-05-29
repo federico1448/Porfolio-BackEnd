@@ -14,5 +14,7 @@ public interface ISkillService {
 	public void deleteSkill(Long id);
 	
 	public Skill findSkill(Long id);
+	
+	public Skill findSkillByName(String name);
 
 }

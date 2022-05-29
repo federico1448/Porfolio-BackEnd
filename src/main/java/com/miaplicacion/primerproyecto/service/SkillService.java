@@ -3,11 +3,13 @@ package com.miaplicacion.primerproyecto.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.miaplicacion.primerproyecto.jpa.extension.SkillRepository;
 import com.miaplicacion.primerproyecto.jpa.interfaces.ISkillService;
 import com.miaplicacion.primerproyecto.model.Skill;
 
+@Service
 public class SkillService implements ISkillService{
 	@Autowired
 	private SkillRepository skillRepository;
@@ -31,6 +33,12 @@ public class SkillService implements ISkillService{
 	@Override
 	public Skill findSkill(Long id) {
 		Skill skill=skillRepository.findById(id).orElse(null);
+		return skill;
+	}
+
+	@Override
+	public Skill findSkillByName(String name) {
+		Skill skill=skillRepository.findByName(name);
 		return skill;
 	}
 	

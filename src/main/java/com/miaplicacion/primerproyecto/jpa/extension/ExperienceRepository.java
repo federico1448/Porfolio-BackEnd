@@ -7,5 +7,5 @@ import com.miaplicacion.primerproyecto.model.Experience;
 
 @Repository
 public interface ExperienceRepository extends JpaRepository<Experience, Long>{
-
+	Experience findByName(String name);
 }

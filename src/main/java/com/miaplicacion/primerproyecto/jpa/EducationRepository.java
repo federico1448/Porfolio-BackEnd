@@ -7,5 +7,5 @@ import com.miaplicacion.primerproyecto.model.Education;
 
 @Repository
 public interface EducationRepository extends JpaRepository<Education,Long>{
-
+	Education findByName(String name);
 }
