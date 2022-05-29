@@ -15,13 +15,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.multipart.support.StandardMultipartHttpServletRequest;
 
 import com.miaplicacion.primerproyecto.jpa.interfaces.IPersonaService;
 import com.miaplicacion.primerproyecto.model.Persona;
 
-import net.minidev.json.JSONArray;
 
 @CrossOrigin(origins = "*")
 @RestController
